@@ -1,0 +1,12 @@
+pandas
+numpy
+pm4py
+openai
+python-dotenv
+plotly
+streamlit
+tabulate
+matplotlib
+seaborn
+
+
