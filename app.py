@@ -10,15 +10,16 @@ import plotly.express as px
 from pm4py.statistics.variants.log import get as variants_module
 from pm4py.objects.conversion.log import converter as log_converter
 
+
+st.set_page_config(page_title = "Process Mining + LLM Insights", layout="wide")
+st.title("Process Mining + LLM Insights Dashboard")
+st.markdown("Analyze process performance, satisfaction, and AI insights.")
+
 '''
 load_dotenv('.env')
 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 '''
-
-st.set_page_config(page_title = "Process Mining + LLM Insights", layout="wide")
-st.title("Process Mining + LLM Insights Dashboard")
-st.markdown("Analyze process performance, satisfaction, and AI insights.")
 
 # ========= Load Data ============== #
 
@@ -178,3 +179,4 @@ with st.spinner("Generating Insights..."):
 
     st.markdown(llm_summary)
 '''
+
