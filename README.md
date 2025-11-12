@@ -33,12 +33,29 @@ The Streamlit application provides an interactive dashboard for visualizing the 
 * Streamlit Dashboard: [link](https://customerticketprocessminingproject-y7kpxlqke3izrfbxwb2rcn.streamlit.app/)
 * LLM Summary: [link]()<img width="1549" height="865" alt="LLM_insight" src="https://github.com/user-attachments/assets/729ea78f-835b-4b9f-941d-89b1ff26d1e1" />
 
+Instruction for using the streamlit dashboard. 
+
+1. Download and Upload data
+   * Please download the provided event log data file named log_df_data.
+   * Upload this file tot he file uploader component within the streamlit dashboard.
+     
+2. Loading Time
+   * After loading the data, please wait approximately 1~2 minutes. The initial data loading can take a moment to complete.
+     
+3. Dashboard Navigation
+   * Once the visualizations have loaded, you can explore the process analysis by navigating through the tabs:
+     
+      * Activity Analysis Tab
+      * Issue Type Analysis Tab
+      * Resolver Analysis Tab
+
 
 ## ⚠️ LLM Integration Note (Action Required)
 
 The deployed Streamlit dashboard currently does not display the LLM-generated summaries due to an issue with the OpenAI API Key being stored as a secret. To enable the full functionality of the dashboard, you must:
 1. Generate a valid OpenAI API Key.
 2. Add your API Key to the appropriate location in the project code (e.g., within the Streamlit secrets management or the relevant configuration file).
+
 
 
 
