@@ -15,11 +15,11 @@ st.set_page_config(page_title = "Process Mining + LLM Insights", layout="wide")
 st.title("Process Mining + LLM Insights Dashboard")
 st.markdown("Analyze process performance, satisfaction, and AI insights.")
 
-'''
-load_dotenv('.env')
 
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
-'''
+# load_dotenv('.env')
+
+# client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+
 
 # ========= Load Data ============== #
 
@@ -179,4 +179,5 @@ with st.spinner("Generating Insights..."):
 
     st.markdown(llm_summary)
 '''
+
 
