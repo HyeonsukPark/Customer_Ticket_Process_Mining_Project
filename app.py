@@ -147,37 +147,38 @@ insight_text = f"""
 
 st.markdown(insight_text)
 
-'''
+
 # ====== LLM Insights ========= #
 
-st.markdown("---")
-st.header("LLM-Generated Insights")
+# st.markdown("---")
+# st.header("LLM-Generated Insights")
 
-with st.spinner("Generating Insights..."):
-    summary_table = summary.head(15).to_markdown(index=False)
-    prompt = f"""
-    You are an expert data analyst specialized in process mining and customer experience.
-    Analyze the following summary data from a process mining dataset.
+# with st.spinner("Generating Insights..."):
+#     summary_table = summary.head(15).to_markdown(index=False)
+#     prompt = f"""
+#     You are an expert data analyst specialized in process mining and customer experience.
+#     Analyze the following summary data from a process mining dataset.
     
-    {summary_table}
+#    {summary_table}
     
-    The correlation between case duration and satisfaction score is {corr_value:.2f}.
-    Summarize the main findings and explain which combinations or patterns lead to lower satisfaction.
-    Provide concise, actionable insights in bullet points.
-    """
+#    The correlation between case duration and satisfaction score is {corr_value:.2f}.
+#    Summarize the main findings and explain which combinations or patterns lead to lower satisfaction.
+#    Provide concise, actionable insights in bullet points.
+#    """
 
-    try:
-        response = client.chat.completions.create(
-            model="gpt-4o-mini",
-            messages=[{"role": "user", "content": prompt}],
-            temperature=0.6
-        )
-        llm_summary = response.choices[0].message.content
-        st.success("Insights generated successfully!")
-    except Exception as e:
-        llm_summary = f"Error generating insights: {e}"
+#    try:
+#        response = client.chat.completions.create(
+#            model="gpt-4o-mini",
+#            messages=[{"role": "user", "content": prompt}],
+#            temperature=0.6
+#        )
+#        llm_summary = response.choices[0].message.content
+#        st.success("Insights generated successfully!")
+#    except Exception as e:
+#        llm_summary = f"Error generating insights: {e}"
 
-    st.markdown(llm_summary)
-'''
+#    st.markdown(llm_summary)
+
+
 
 
