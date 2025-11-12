@@ -30,11 +30,16 @@ The Streamlit application provides an interactive dashboard for visualizing the 
 * Bar Graphs : Visualizations based on correlation plots, satisfaction by activity, issue type analysis, and resolver performance.
 * Analysis Summary : A section intended for the LLM-generated summary and analysis.
 
+* Streamlit Dashboard: [link](https://customerticketprocessminingproject-y7kpxlqke3izrfbxwb2rcn.streamlit.app/)
+* LLM Summary: [link]()<img width="1549" height="865" alt="LLM_insight" src="https://github.com/user-attachments/assets/729ea78f-835b-4b9f-941d-89b1ff26d1e1" />
+
+
 ## ⚠️ LLM Integration Note (Action Required)
 
 The deployed Streamlit dashboard currently does not display the LLM-generated summaries due to an issue with the OpenAI API Key being stored as a secret. To enable the full functionality of the dashboard, you must:
 1. Generate a valid OpenAI API Key.
 2. Add your API Key to the appropriate location in the project code (e.g., within the Streamlit secrets management or the relevant configuration file).
+
 
 
 
